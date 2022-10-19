@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap");
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  border-radius: 20px;
+  font-size: 15px;
+  overflow: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card {
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row-reverse; */
+  /* margin: 50px; */
+  width: 900px;
+  height: 350px;
+  /* margin-left: 150px; */
+  /* margin-top: 100px; */
+  border-radius: 5px;
+}
+
+/* .mtgImg {
+  height: 350px;
+  width: 400px;
+  border-radius: 5px;
+} */
+
+.pict {
+  height: 100%;
+  width: 45%;
+  /* background-color: red; */
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-image: url(./images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pict_frame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(277, 64%, 61%, 0.5);
+}
+
+.details_container {
+  margin: 40px 30px 0 40px;
+  width: 55%;
+}
+
+.intro {
+  color: hsl(0, 0%, 100%);
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+.description {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+  /* text-transform: initial; */
+  margin-top: 30px;
+  color: hsla(0, 0%, 100%, 0.75);
+  text-align: justify;
+  width: 300px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-right: 70px;
+}
+
+.value {
+  font-weight: 700;
+  color: white;
+}
+
+.meta {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Lexend Deca", sans serif;
+  font-size: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column-reverse;
+    width: 340px;
+    height: 700px;
+    justify-content: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: auto;
+  }
+
+  .pict {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .details_container {
+    width: 300px;
+    margin: 60px 20px 0 20px;
+    height: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+  }
+  /* .intro {
+    text-align: center;
+  } */
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+/* @media only screen and (max-width: 1440px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pict {
+    background: url("./images/image-header-mobile.jpg") center no-repeat;
+        min-height: 250px;
+        background-size: cover;
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+} */
